@@ -27,6 +27,7 @@ petal_length = st.sidebar.slider("Petal Length",float(df['petal length (cm)'].mi
 
 input_data = [[sepal_length,sepal_width,petal_length,petal_width]]
 
+#PREDICTION
 prediction = model.predict(input_data)
 predicted_species = target_names[prediction[0]]
 
